@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Business, business } from '../../types/business'
 import { OrderCartService } from '../order-cart.service';
+import { Offer } from 'src/types/offer';
 
 @Component({
   selector: 'app-store-details',
@@ -22,11 +23,11 @@ export class StoreDetailsComponent implements OnInit {
     );
   }
 
-  addProduct(){
+  addProduct(item: Offer){
 
   }
 
-  removeProduct(){
+  removeProduct(item: Offer){
 
   }
 }

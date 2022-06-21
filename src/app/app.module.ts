@@ -21,11 +21,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatInput, MatInputModule} from '@angular/material/input';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { CardCarouselComponent } from './card-carousel/card-carousel.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { SearchPageComponent } from './search-page/search-page.component';
 import { ManageStoreComponent } from './manage-store/manage-store.component';
 import { ProfileManagementComponent } from './profile-management/profile-management.component';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 //import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
@@ -56,8 +55,7 @@ import { ProfileManagementComponent } from './profile-management/profile-managem
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
-    NgbModule,
-    SlickCarouselModule,
+    MatSlideToggleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -21,8 +21,8 @@
             <p>{{product.category}}</p>
             <p>{{product.pricePerKilo}}RM/kg</p>
           </div>
-          <button type="button">-</button>
-          <button type="button">+</button>
+          <button type="button" (click)="removeProduct()">-</button><p [id]="product.oId"></p>
+          <button type="button" (click)="addProduct()">+</button><p [id]="product.oId"></p>
 
         </div>
       </div>

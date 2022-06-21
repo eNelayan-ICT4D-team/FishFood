@@ -15,8 +15,8 @@ export class ProfileManagementComponent implements OnInit {
     realName: "Adrian Aabech"
   }
   enable(){
-    if(this.disableForm=false) this.disableForm=true;
-    else this.disableForm=false;
+    if(this.disableForm=false) {this.disableForm=true;}
+    else {this.disableForm=false;}
   }
   sendUpdate() {
     window.alert("UPDATED");

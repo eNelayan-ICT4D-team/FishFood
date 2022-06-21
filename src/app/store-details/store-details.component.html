@@ -1,0 +1,33 @@
+
+<div class="main-details-container">
+  <img /> <!-- get image for product, then  -->
+
+  <div>
+    <h3>{{ store.businessname }}</h3>
+    <!--<h4> By {{ store.businessname }}</h4>-->
+    <div class="row">
+      <h4>{{ store.avgprice | currency }}</h4>
+      <h4> Distance: <b>1km</b></h4> <!--Will be retrieved from backend by our position - store position -->
+      <img/>
+    </div>
+    <p>{{ store.description }}</p>
+    <div class="offering-container">
+      <h2>Offering</h2>
+      <div class="offercontainer" *ngFor="let product of store.products">
+        <div class="offerCard">
+          <h4>{{product.name }}</h4>
+          <div class="row-offercard">
+            <p>{{product.category}}</p>
+            <p>{{product.pricePerKilo}}RM/kg</p>
+          </div>
+          <button type="button">-</button>
+          <button type="button">+</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="reservation">
+    <button type="button">Reserve</button>
+  </div>
+</div>

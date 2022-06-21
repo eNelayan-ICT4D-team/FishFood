@@ -1,0 +1,20 @@
+<mat-toolbar>
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav mode="side" opened class="sidenav">
+      <li>
+        <ul><a href="#">Home</a></ul>
+        <ul><a href="#">Search</a></ul>
+        <ul><a href="#">Manage store</a></ul>
+        <ul><a href="#">Profile</a></ul>
+      </li>
+    </mat-sidenav>
+  </mat-sidenav-container>
+
+  <button mat-icon-button class="hamburger-icon" aria-label="menu icon" (click)="sidenav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>Fishfood</span>
+  <span class="spacer">
+  </span>
+  <button mat-button color="primary">Location, zipcode</button> <!-- Get real location on button press?-->
+</mat-toolbar>

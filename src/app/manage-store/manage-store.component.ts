@@ -10,6 +10,7 @@ import { Offer, offers } from '../../types/offer';
 })
 export class ManageStoreComponent implements OnInit {
   disableForm = true;
+
   store = {
     id: 1,
     owner: {username:"aceasa", password:"123123123", realName:"Adrian Aabech", typeOfUser:"Owner"},
@@ -17,7 +18,6 @@ export class ManageStoreComponent implements OnInit {
     description: 'This fish is fantastic',
     rating: 3.8,
     businessname: 'Gigachad Nelayan',
-    expiration: new Date('2022-07-20'),
     products: new Array<Offer>(
       offers[0], offers[1]
     ),
@@ -25,8 +25,12 @@ export class ManageStoreComponent implements OnInit {
   }
 
   enable(){
-    if(this.disableForm=false) this.disableForm=true;
-    else this.disableForm=false;
+    if(this.disableForm=true) {
+      this.disableForm=false;
+    }
+    else {
+      this.disableForm=true;
+    }
   }
 
   sendUpdate(){
@@ -47,7 +51,6 @@ export class ManageStoreComponent implements OnInit {
       description: 'This fish is fantastic',
       rating: 3.8,
       businessname: 'Gigachad Nelayan',
-      expiration: new Date('2022-07-20'),
       products: new Array<Offer>(
         offers[0], offers[1]
       ),

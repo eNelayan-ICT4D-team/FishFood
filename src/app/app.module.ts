@@ -25,6 +25,7 @@ import { SearchPageComponent } from './search-page/search-page.component';
 import { ManageStoreComponent } from './manage-store/manage-store.component';
 import { ProfileManagementComponent } from './profile-management/profile-management.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { UserPurchaseConfirmationComponent } from './user-purchase-confirmation/user-purchase-confirmation.component';
 //import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
@@ -37,7 +38,8 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     CardCarouselComponent,
     SearchPageComponent,
     ManageStoreComponent,
-    ProfileManagementComponent
+    ProfileManagementComponent,
+    UserPurchaseConfirmationComponent
   ],
   imports: [
     BrowserModule,

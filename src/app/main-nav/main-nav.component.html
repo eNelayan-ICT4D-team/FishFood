@@ -2,10 +2,10 @@
   <mat-sidenav-container class="sidenav-container">
     <mat-sidenav #sidenav mode="side" opened class="sidenav">
       <li>
-        <ul><a href="#">Home</a></ul>
-        <ul><a href="#">Search</a></ul>
-        <ul><a href="#">Manage store</a></ul>
-        <ul><a href="#">Profile</a></ul>
+        <ul><a [title]="" [routerLink]="['']">Home</a></ul>
+        <ul><a [title]="" [routerLink]="['search']">Search</a></ul>
+        <ul><a [title]="" [routerLink]="['manageStoreDetails']">Manage store</a></ul>
+        <ul><a [title]="" [routerLink]="['profile']">Profile</a></ul>
       </li>
     </mat-sidenav>
   </mat-sidenav-container>

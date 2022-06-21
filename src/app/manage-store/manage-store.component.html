@@ -1,1 +1,21 @@
-<p>manage-store works!</p>
+<form class="store-form" (submit)="sendUpdate()">
+  <mat-slide-toggle (toggleChange)="enable()">Edit mode</mat-slide-toggle>
+  <label></label>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Your name</mat-label>
+    <input [disabled]="disableForm" matInput placeholder="Ex. James Johnson" [value]="store.owner.realName"> <!--Value will be extracted-->
+  </mat-form-field>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Store name</mat-label>
+    <input [disabled]="disableForm" matInput placeholder="Ex. Adrian Nelayan" [value]='store.businessname'><!-- Value will be extracted-->
+  </mat-form-field>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Store description</mat-label>
+    <textarea [disabled]="disableForm" matInput placeholder="Ex. We provide fresh fish from Asajaya" [value]='store.description'></textarea> <!-- value will be extracted-->
+  </mat-form-field>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Location</mat-label>
+    <input [disabled]="disableForm" matInput placeholder="Adress or post code" [value]='store.location'> <!-- Value will be extracted -->
+  </mat-form-field>
+  <button mat-button color="primary" type="submit">Update</button>
+</form>

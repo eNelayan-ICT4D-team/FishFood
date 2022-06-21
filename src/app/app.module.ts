@@ -23,6 +23,9 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { CardCarouselComponent } from './card-carousel/card-carousel.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { SearchPageComponent } from './search-page/search-page.component';
+import { ManageStoreComponent } from './manage-store/manage-store.component';
+import { ProfileManagementComponent } from './profile-management/profile-management.component';
 //import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
@@ -32,7 +35,10 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     StoreDetailsComponent,
     MainNavComponent,
     LoginComponent,
-    CardCarouselComponent
+    CardCarouselComponent,
+    SearchPageComponent,
+    ManageStoreComponent,
+    ProfileManagementComponent
   ],
   imports: [
     BrowserModule,

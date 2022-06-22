@@ -1,6 +1,6 @@
-<mat-toolbar>
-  <mat-sidenav-container class="sidenav-container">
-    <mat-sidenav #sidenav mode="side" opened class="sidenav">
+<mat-toolbar color="primary">
+  <mat-sidenav-container color="primary" class="sidenav-container">
+    <mat-sidenav color="primary" #sidenav mode="side" opened class="sidenav">
       <li>
         <ul><a [title]="" [routerLink]="['']" class="font-colour">Home</a></ul>
         <ul><a [title]="" [routerLink]="['search']" class="font-colour">Search</a></ul>
@@ -9,12 +9,13 @@
       </li>
     </mat-sidenav>
   </mat-sidenav-container>
-
-  <button mat-icon-button class="hamburger-icon" aria-label="menu icon" (click)="sidenav.toggle()">
+  <div color="primary">
+    <button mat-icon-button class="hamburger-icon" aria-label="menu icon" (click)="sidenav.toggle()">
     <mat-icon>menu</mat-icon>
-  </button>
-  <span>Fishfood</span>
-  <span class="spacer">
-  </span>
-  <button mat-button color="primary">Location, zipcode</button> <!-- Get real location on button press?-->
+    </button>
+    <span>Fishfood</span>
+    <span class="spacer">
+    </span>
+    <button mat-button color="primary">Location, zipcode</button> <!-- Get real location on button press?-->
+  </div>
 </mat-toolbar>

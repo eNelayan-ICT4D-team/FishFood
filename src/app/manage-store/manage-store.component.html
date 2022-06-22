@@ -1,6 +1,6 @@
 <form class="store-form" (submit)="sendUpdate()">
   <mat-slide-toggle (click)="enable()">Edit mode</mat-slide-toggle>
-  <label></label>
+  <label></label><br>
   <mat-form-field class="example-full-width" appearance="fill">
     <mat-label>Your name</mat-label>
     <input [disabled]="disableForm" matInput placeholder="Ex. James Johnson" [value]="store.owner.realName"> <!--Value will be extracted-->
@@ -16,6 +16,6 @@
   <mat-form-field class="example-full-width" appearance="fill">
     <mat-label>Location</mat-label>
     <input [disabled]="disableForm" matInput placeholder="Adress or post code" [value]='store.location'> <!-- Value will be extracted -->
-  </mat-form-field>
-  <button mat-button color="primary" type="submit">Update</button>
+  </mat-form-field><br>
+  <button class="update-button" type="submit">Update</button>
 </form>

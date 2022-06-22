@@ -3,16 +3,14 @@
   <img /> <!-- get image for product, then  -->
 
   <div>
-    <h3>{{ store.businessname }}</h3>
+    <h3 class="store-name">{{ store.businessname }}</h3>
     <!--<h4> By {{ store.businessname }}</h4>-->
     <div class="row">
-      <h4>{{ store.avgprice | currency }}</h4>
-      <h4> Distance: <b>1km</b></h4> <!--Will be retrieved from backend by our position - store position -->
-      <img/>
+      <h4 class="info1">{{ store.avgprice | currency }}</h4>
+      <h4 class="info2"> Distance: <b>1km</b></h4> <!--Will be retrieved from backend by our position - store position -->
     </div>
-    <p>{{ store.description }}</p>
+    <p class="info2">{{ store.description }}</p>
     <div class="offering-container">
-      <img/>
       <h2>Offering</h2>
       <div class="offercontainer" *ngFor="let product of store.products">
         <div class="offerCard">

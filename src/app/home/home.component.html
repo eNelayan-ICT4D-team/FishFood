@@ -1,8 +1,8 @@
 <div>
   <h2>Fresh fish specialists</h2>
   <section>
-    <div fxLayout="row wrap">
-      <div class="card-section-row" *ngFor="let store of business" class="" fxFlex="25%">
+    <div class="wrapper">
+      <div class="card-section-row" *ngFor="let store of business">
         <mat-card class="card">
           <a [title]="store.businessname + ' details'" [routerLink]="['/stores', store.id]">
             <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
@@ -13,8 +13,7 @@
             <mat-card-subtitle>{{store.description}}</mat-card-subtitle>
           </mat-card-header>
           <mat-card-content>
-            <p>
-            </p>
+            <a href="#" class="small-box-footer">More info</a>
           </mat-card-content>
           <mat-card-actions>
           </mat-card-actions>

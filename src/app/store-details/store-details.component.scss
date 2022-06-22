@@ -1,12 +1,15 @@
 .main-details-container{
+  border: 1px solid gray;
   width: max-width;
+  background-color: lightgrey;
 }
 
 .offercontainer{
   display: inline-block;
-  border: solid gainsboro 1px;
+  border: solid rgb(49, 35, 35) 1px;
   padding: 5% 25px 5% 10px;
   margin-right: 10px;
+  background-color: rgb(121, 94, 94);
 }
 
 .row-offercard{
@@ -15,4 +18,22 @@
 
 .reservation{
   padding-top: 5%;
+}
+
+.store-name{
+  font-size: 40px;
+  text-shadow: 1px 1px 1px red;
+  font-family: 'Corben', Georgia, Times, serif;
+}
+
+.info1{
+  font-size: 30px;
+}
+
+.info2{
+  font-size: 20px;
+}
+
+.offering-container{
+  font-size: 20px;
 }

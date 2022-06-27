@@ -1,21 +1,21 @@
-<mat-toolbar color="primary">
-  <mat-sidenav-container color="primary" class="sidenav-container">
-    <mat-sidenav color="primary" #sidenav mode="side" opened class="sidenav">
-      <li>
-        <ul><a [title]="" [routerLink]="['']" class="font-colour">Home</a></ul>
+<mat-toolbar class="topbar-colour">
+  <mat-sidenav-container  class="sidenav-container">
+    <mat-sidenav #sidenav mode="side" opened class="sidenav">
+      <div >
+        <ul ><a [title]="" [routerLink]="['']" class="font-colour">Home</a></ul>
         <ul><a [title]="" [routerLink]="['search']" class="font-colour">Search</a></ul>
         <ul><a [title]="" [routerLink]="['manageStoreDetails']" class="font-colour">Manage store</a></ul>
         <ul><a [title]="" [routerLink]="['profile']" class="font-colour">Profile</a></ul>
-      </li>
+      </div>
     </mat-sidenav>
   </mat-sidenav-container>
-  <div color="primary">
+  <div >
     <button mat-icon-button class="hamburger-icon" aria-label="menu icon" (click)="sidenav.toggle()">
     <mat-icon>menu</mat-icon>
     </button>
     <span>Fishfood</span>
     <span class="spacer">
     </span>
-    <button mat-button color="primary">Location, zipcode</button> <!-- Get real location on button press?-->
+    <button mat-button class="font-colour">Location, zipcode</button> <!-- Get real location on button press?-->
   </div>
 </mat-toolbar>

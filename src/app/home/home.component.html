@@ -7,15 +7,14 @@
           <a [title]="store.businessname + ' details'" [routerLink]="['/stores', store.id]">
             <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
           </a>
-          <mat-card-header>
+          <mat-card-header class="body">
             <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>{{store.businessname}}</mat-card-title>
-            <mat-card-subtitle>{{store.description}}</mat-card-subtitle>
+            <mat-card-title> {{store.businessname}} </mat-card-title>
+            <mat-card-subtitle><p class="font"> {{store.description}}</p> </mat-card-subtitle>
           </mat-card-header>
           <mat-card-content>
-            <a href="#" class="small-box-footer">More info</a>
           </mat-card-content>
-          <mat-card-actions>
+          <mat-card-actions><a href="#" class="small-box-footer">More info</a>
           </mat-card-actions>
         </mat-card>
       </div>

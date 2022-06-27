@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Business, business } from '../../types/business'
 import { OrderCartService } from '../order-cart.service';
 import { Offer } from 'src/types/offer';
+import { ThisReceiver } from '@angular/compiler';
 
 @Component({
   selector: 'app-store-details',
@@ -12,7 +13,10 @@ import { Offer } from 'src/types/offer';
 export class StoreDetailsComponent implements OnInit {
   store: Business | undefined;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute,
+    private ocs: OrderCartService
+
+    ) { }
 
   ngOnInit(): void {
     const routeParams = this.route.snapshot.paramMap;
@@ -23,12 +27,22 @@ export class StoreDetailsComponent implements OnInit {
     );
   }
 
-  addProduct(item: Offer){
-
+  addProduct(item: Offer, storestring: string){
+    const numb=this.ocs.getCountItem(item);
+    if(numb+0.5 > item.amountOfKilos ){
+      //error msg
+    } else {
+      this.ocs.addProductToCart(item, storestring);
+    }
   }
 
-  removeProduct(item: Offer){
-
+  removeProduct(item: Offer, storestring: string){
+    const numb=this.ocs.getCountItem(item);
+    if(numb-0.5 < 0){
+      //errors msg
+    } else {
+      this.ocs.removeProductFromCart(item, storestring);
+    }
   }
 }
 

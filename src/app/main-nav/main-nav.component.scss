@@ -7,6 +7,7 @@
   top: 60px;
   bottom: 60px;
   left: 0;
+  color: blue;
 }
 
 .sidenav {
@@ -14,7 +15,7 @@
   align-items: center;
   justify-content: center;
   width: 200px;
-  background: #7384e5;
+  background: #a1a4be;
 }
 
 .sidenav a{
@@ -24,4 +25,9 @@
 
 .font-colour{
   color: white;
+}
+
+.topbar-colour{
+  color: rgb(240, 246, 247);
+  background: #1815dd;
 }

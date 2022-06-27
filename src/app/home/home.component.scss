@@ -3,6 +3,7 @@
   max-width: 250px;
   margin-left: 5%;
   margin-bottom: 5%;
+  background: #28acf8;
 }
 
 .example-header-image {
@@ -14,5 +15,10 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 30px;
- 
+  
 }
+.font{
+  color: white;
+  font-size: 15px;
+}
+
